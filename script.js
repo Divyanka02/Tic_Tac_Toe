@@ -42,22 +42,7 @@ let turn = "X";
  }
 
  //GAME LOGIC
- /*let boxes = document.getElementsByClassName("box");
-Array.from(boxes).forEach(element =>{
-    let boxtext = element.querySelector('.boxtext');
-    element.addEventListener('click', ()=>{
-        if(boxtext.innerText === ''){
-            boxtext.innerText = turn;
-            turn = changeturn();
-            ting.play();
-            winner();
-           /* if (!isgameover){
-                document.getElementsByClassName("info")[0].innerText  = "Turn for " + turn;
-            } 
-        }
-    })
-})
-*/
+
 let boxes = document.getElementsByClassName("box");
  
  Array.from(boxes).forEach(element =>{
@@ -79,18 +64,7 @@ let boxes = document.getElementsByClassName("box");
 
 
 //  RESET
-/*reset.addEventListener('click', ()=>{
-    let boxtexts = document.querySelectorAll('.boxtext');
-    Array.from(boxtexts).forEach(element => {
-        element.innerText = ""
-    });
-    turn = "X"; 
-    isgameover = false
-    document.querySelector(".line").style.width = "0vw";
-    document.getElementsByClassName("info")[0].innerText  = "Turn for " + turn;
-    document.querySelector('.imgbox').getElementsByTagName('img')[0].style.width = "0px"
-})
- */  
+
     reset.addEventListener('click', ()=>{
      let boxtext = document.querySelectorAll('.boxtext');
         Array.from(boxtext).forEach(element =>{
